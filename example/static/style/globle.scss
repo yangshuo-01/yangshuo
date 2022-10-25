@@ -1,0 +1,82 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 14px;
+}
+p{
+    margin: 0;
+}
+// 重定义标题markdown标题标签大小h1~h4
+@each $h,$size in (h1,36px),(h2,30px),(h3,24px),(h4,18px){
+    #{$h}{
+        font-size: $size;
+    }
+}
+h1,h2,h3,h4{
+    font-weight: 100;
+    margin-top: 54px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 0.7em;
+    // transition: all 0.3s ease-out;
+    a{
+        text-decoration: none;
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        transition: all 0.3s ease-out  ;
+    }
+    &:hover{
+        // transform: translateX(24px);
+        a{
+            color: $blue-darken-1;
+        }
+    }
+}
+.page_content-res{
+    transition: padding .3s ease-in-out;
+    padding: 0 200px;
+}
+
+.doc_page_content{
+    //文档表格样式
+    h2~table{
+        border-radius: 4px;
+        width: 100%;
+        border-collapse: collapse;
+        // border: thin solid $grey-lighten-3;
+        thead{
+
+            th{
+                text-align: left;
+            }
+        }
+        tbody{
+            tr:hover{
+                background-color:$grey-lighten-3;
+            }
+            tr{
+                td:first-child{
+                    color: $blue-darken-2;
+                    font-weight: bold;
+                    &::before{
+                        content: '#';
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                    &:hover::before{
+                        color: $blue-darken-2;
+                    }
+                }
+            }
+        }
+        th,td{
+            padding: 12px;
+            border-bottom: thin solid $grey-lighten-3;
+        }
+    }
+}
+

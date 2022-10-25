@@ -1,0 +1,28 @@
+
+@media screen and (max-width:939px) {
+    .page_content-res{
+        padding: 0px;
+        .sidBar{
+            position: relative;
+            width: 0px !important;
+            z-index: 2000;
+            top: 0px !important;
+            left: 0px !important;
+          }
+        .doc_page_content{
+            padding-left: 24px !important;
+        }
+    }
+}
+@media screen and (min-width:940px) and (max-width:1490px){
+    .page_content-res{
+        padding: 0px;
+        .sidBar{
+            top: 54px !important;
+            left: 0px !important;
+          }
+    }
+}
+@media screen and  (min-width:1200) {
+
+}

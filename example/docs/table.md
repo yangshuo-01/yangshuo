@@ -1,0 +1,152 @@
+<script>
+export default{
+    data(){
+      return{
+          data:[
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+          ],
+          header:[
+            {
+                label:"姓名",
+                value:"name",
+            },
+            {
+                label:"地址",
+                value:"address",
+            },
+            {
+                label:"时间",
+                value:"time",
+            },
+            {
+                label:"??",
+                value:"scropt",
+            }
+          ]
+      }
+    },
+}
+</script>
+# table
+
+常用数据表格组件
+
+##  基本用法
+
+::: code 基本表格组件的用法
+```html
+<un-table :data="data" :header="header"></un-table>
+<script>
+export default{
+    data(){
+      return{
+          data:[
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+            {
+                name:"陈阳",
+                address:"二社区B楼",
+                time:"2014年",
+                scropt:"test"
+            },
+          ],
+          header:[
+            {
+                label:"姓名",
+                value:"name",
+            },
+            {
+                label:"地址",
+                value:"address",
+            },
+            {
+                label:"时间",
+                value:"time",
+            },
+            {
+                label:"??",
+                value:"scropt",
+            }
+          ]
+      }
+    },
+}
+</script>
+```
+:::
+
